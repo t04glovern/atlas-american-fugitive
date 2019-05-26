@@ -40,6 +40,13 @@ You'll need to change the username in the DATABASE_URL entry to match your Postg
 
 Run `npm run dev` to start the API server on `localhost:5000`, and to build/watch/serve the frontend code from `localhost:8080`.
 
+## Deploy
+
+```bash
+aws s3 mb s3://americanfugitive.map.devopstar.com
+aws s3 sync public/ s3://americanfugitive.map.devopstar.com
+```
+
 ## Attribution
 
 ```bash
