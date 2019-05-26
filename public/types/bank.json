@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Point",
+        "coordinates": [1496.5, 2323.5],
+        "properties": {
+            "name": "Bank"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1331, 1369],
+        "properties": {
+            "name": "Bank"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3037.5, 2179],
+        "properties": {
+            "name": "Bank"
+        }
+    }
+]

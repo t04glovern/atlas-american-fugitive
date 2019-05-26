@@ -2,6 +2,8 @@
 
 An interactive "American Fugitive" map powered by Leaflet, PostGIS, and Redis.
 
+![Map Example](img/example-map.png)
+
 ## Structure
 
 - `app/` - The front-end web application source.
@@ -34,7 +36,7 @@ REDIS_PORT=6379
 CORS_ORIGIN=http://localhost:8080
 ```
 
-You'll need to change the username in the DATABASE_URL entry to match your PostgreSQL user credentials. Unless your name is "Patrick", that is, in which case it might already be fine.
+You'll need to change the username in the DATABASE_URL entry to match your PostgreSQL user credentials. Unless your name is "posgres", that is, in which case it might already be fine.
 
 Run `npm run dev` to start the API server on `localhost:5000`, and to build/watch/serve the frontend code from `localhost:8080`.
 

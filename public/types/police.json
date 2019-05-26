@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Point",
+        "coordinates": [1060, 2782],
+        "properties": {
+            "name": "Police"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2213.5, 1143.5],
+        "properties": {
+            "name": "Police"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2819, 2172],
+        "properties": {
+            "name": "Police"
+        }
+    }
+]

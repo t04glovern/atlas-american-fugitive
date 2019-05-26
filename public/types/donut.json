@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Point",
+        "coordinates": [1417, 2292],
+        "properties": {
+            "name": "Donut"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2465.75, 1628.25],
+        "properties": {
+            "name": "Donut"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2650.25, 2136.75],
+        "properties": {
+            "name": "Donut"
+        }
+    }
+]

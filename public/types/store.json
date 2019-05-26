@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Point",
+        "coordinates": [1491.75, 2830.5],
+        "properties": {
+            "name": "General Store"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1419.5, 1148.5],
+        "properties": {
+            "name": "General Store"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2470, 2147.5],
+        "properties": {
+            "name": "General Store"
+        }
+    }
+]

@@ -32,6 +32,10 @@ export class Map extends Component {
     var bounds = [[0, 0], [3986, 3986]]
     L.imageOverlay('map.png', bounds).addTo(this.map)
     this.map.fitBounds(bounds)
+
+    this.map.on('click', function(e){
+      console.log(e.latlng)
+    });
   }
 
   /** Add location geojson to the leaflet instance */
@@ -41,7 +45,7 @@ export class Map extends Component {
       // Show marker on location
       pointToLayer: (feature, latlng) => {
         return L.marker(latlng, {
-          icon: L.icon({ iconUrl, iconSize: [ 24, 56 ] }),
+          icon: L.icon({ iconUrl, iconSize: [ 24, 24 ] }),
           title: feature.properties.name })
       },
       onEachFeature: this.onEachLocation.bind(this)
@@ -56,30 +60,6 @@ export class Map extends Component {
       this.setHighlightedRegion(null) // Deselect highlighed region
       const { name, id, type } = feature.properties
       this.triggerEvent('locationSelected', { name, id, type })
-    }})
-  }
-
-  /** Add boundary (kingdom) geojson to the leaflet instance */
-  addKingdomGeojson (geojson) {
-    // Initialize new geojson layer
-    this.layers.kingdom = L.geoJSON(geojson, {
-      // Set layer style
-      style: {
-        'color': '#222',
-        'weight': 1,
-        'opacity': 0.65
-      },
-      onEachFeature: this.onEachKingdom.bind(this)
-    })
-  }
-
-  /** Assign click listener for each kingdom GeoJSON item  */
-  onEachKingdom (feature, layer) {
-    layer.on({ click: (e) => {
-      const { name, id } = feature.properties
-      this.map.closePopup() // Deselect selected location marker
-      this.setHighlightedRegion(layer) // Highlight kingdom polygon
-      this.triggerEvent('locationSelected', { name, id, type: 'kingdom' })
     }})
   }
 

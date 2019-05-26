@@ -22,18 +22,7 @@ const idValidator = validate({
 
 // Check that query param is valid location type
 const typeValidator = validate({
-  params: { type: joi.string().valid(['castle', 'city', 'town', 'ruin', 'landmark', 'region']).required() }
-})
-
-// Hello World Test Endpoint
-router.get('/hello', async ctx => {
-  ctx.body = 'Hello World'
-})
-
-// Get time from DB
-router.get('/time', async ctx => {
-  const result = await database.queryTime()
-  ctx.body = result
+  params: { type: joi.string().valid(['bank', 'clothing', 'donut', 'gas', 'store', 'pharmacy', 'police']).required() }
 })
 
 // Respond with locations of specified type
@@ -57,46 +46,6 @@ router.get('/locations/:id/summary', idValidator, async ctx => {
   const id = ctx.params.id
   const result = await database.getSummary('locations', id)
   ctx.body = result || ctx.throw(404)
-})
-
-// Respond with boundary geojson for all kingdoms
-router.get('/kingdoms', async ctx => {
-  const results = await database.getKingdomBoundaries()
-  if (results.length === 0) { ctx.throw(404) }
-
-  // Add row metadata as geojson properties
-  const boundaries = results.map((row) => {
-    let geojson = JSON.parse(row.st_asgeojson)
-    geojson.properties = { name: row.name, id: row.gid }
-    return geojson
-  })
-
-  ctx.body = boundaries
-})
-
-// Respond with calculated area of kingdom, by id
-router.get('/kingdoms/:id/size', idValidator, async ctx => {
-  const id = ctx.params.id
-  const result = await database.getRegionSize(id)
-  if (!result) { ctx.throw(404) }
-
-  // Convert response (in square meters) to square kilometers
-  const sqKm = result.size * (10 ** -6)
-  ctx.body = sqKm
-})
-
-// Respond with summary of kingdom, by id
-router.get('/kingdoms/:id/summary', idValidator, async ctx => {
-  const id = ctx.params.id
-  const result = await database.getSummary('kingdoms', id)
-  ctx.body = result || ctx.throw(404)
-})
-
-// Respond with number of castle in kingdom, by id
-router.get('/kingdoms/:id/castles', idValidator, async ctx => {
-  const regionId = ctx.params.id
-  const result = await database.countCastles(regionId)
-  ctx.body = result ? result.count : ctx.throw(404)
 })
 
 module.exports = router

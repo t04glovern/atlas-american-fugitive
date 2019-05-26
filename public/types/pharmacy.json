@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Point",
+        "coordinates": [921.75, 2210.25],
+        "properties": {
+            "name": "Pharmacy"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2111.25, 1090.5],
+        "properties": {
+            "name": "Pharmacy"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3173.75, 2897.5],
+        "properties": {
+            "name": "Pharmacy"
+        }
+    }
+]

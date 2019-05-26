@@ -24,30 +24,7 @@ export class InfoPanel extends Component {
     // Display location title
     this.refs.title.innerHTML = `<h1>${name}</h1>`
 
-    // Download and display information, based on location type
-    this.refs.content.innerHTML = (type === 'kingdom')
-      ? await this.getKingdomDetailHtml(id)
-      : await this.getLocationDetailHtml(id, type)
-  }
-
-  /** Create kingdom detail HTML string */
-  async getKingdomDetailHtml (id) {
-    // Get kingdom metadata
-    let { kingdomSize, castleCount, kingdomSummary } = await this.api.getAllKingdomDetails(id)
-
-    // Convert size to an easily readable string
-    kingdomSize = kingdomSize.toLocaleString(undefined, { maximumFractionDigits: 0 })
-
-    // Format summary HTML
-    const summaryHTML = this.getInfoSummaryHtml(kingdomSummary)
-
-    // Return filled HTML template
-    return `
-      <h3>KINGDOM</h3>
-      <div>Size Estimate - ${kingdomSize} km<sup>2</sup></div>
-      <div>Number of Castles - ${castleCount}</div>
-      ${summaryHTML}
-      `
+    //await this.getLocationDetailHtml(id, type)
   }
 
   /** Create location detail HTML string */

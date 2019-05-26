@@ -17,13 +17,13 @@ class ViewController {
     this.searchService = new SearchService() // Initialize search service
 
     // Initialize API service
-    if (window.location.hostname === 'localhost') {
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
       this.api = new ApiService('http://localhost:5000/')
     } else {
-      this.api = new ApiService('https://api.atlasofthrones.com/')
+      this.api = new ApiService('https://api.americanfugitivemap.com/')
     }
 
-    this.locationPointTypes = [ 'castle', 'city', 'town', 'ruin', 'region', 'landmark' ]
+    this.locationPointTypes = ['bank', 'clothing', 'donut', 'gas', 'store', 'pharmacy', 'police']
     this.initializeComponents()
     this.loadMapData()
   }
@@ -46,7 +46,7 @@ class ViewController {
 
     // Initialize Layer Toggle Panel
     this.layerPanel = new LayerPanel('layer-panel-placeholder', {
-      data: { layerNames: ['kingdom', ...this.locationPointTypes] },
+      data: { layerNames: [...this.locationPointTypes] },
       events: { layerToggle:
         // Toggle layer in map controller on "layerToggle" event
         event => { this.mapComponent.toggleLayer(event.detail) }
@@ -70,17 +70,6 @@ class ViewController {
 
   /** Load map data from the API */
   async loadMapData () {
-    // Download kingdom boundaries
-    const kingdomsGeojson = await this.api.getKingdoms()
-
-    // Add boundary data to search service
-    this.searchService.addGeoJsonItems(kingdomsGeojson, 'kingdom')
-
-    // Add data to map
-    this.mapComponent.addKingdomGeojson(kingdomsGeojson)
-
-    // Show kingdom boundaries
-    this.layerPanel.toggleMapLayer('kingdom')
 
     // Download location point geodata
     for (let locationType of this.locationPointTypes) {
@@ -93,11 +82,14 @@ class ViewController {
       // Add data to map
       this.mapComponent.addLocationGeojson(locationType, geojson, this.getIconUrl(locationType))
     }
+
+    // Show police layer
+    this.layerPanel.toggleMapLayer('police')
   }
 
   /** Format icon url for layer type  */
   getIconUrl (layerName) {
-    return `https://cdn.patricktriest.com/atlas-of-thrones/icons/${layerName}.svg`
+    return `./icons/${layerName}.png`
   }
 }
 

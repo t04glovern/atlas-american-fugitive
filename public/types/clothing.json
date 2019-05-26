@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Point",
+        "coordinates": [920.25, 2161],
+        "properties": {
+            "name": "Clothing"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2379, 1149.5],
+        "properties": {
+            "name": "Clothing"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3608, 2342],
+        "properties": {
+            "name": "Clothing"
+        }
+    }
+]

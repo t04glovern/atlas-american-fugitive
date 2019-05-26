@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Point",
+        "coordinates": [1408.5, 2160.5],
+        "properties": {
+            "name": "Gas"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1364, 1072.5],
+        "properties": {
+            "name": "Gas"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2233.5, 2088],
+        "properties": {
+            "name": "Gas"
+        }
+    }
+]

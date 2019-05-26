@@ -24,7 +24,7 @@ export class LayerPanel extends Component {
   /** Create and append new layer button DIV */
   addLayerButton (layerName) {
     let layerItem = document.createElement('div')
-    layerItem.textContent = `${layerName}s`
+    layerItem.textContent = `${layerName}`
     layerItem.setAttribute('ref', `${layerName}-toggle`)
     layerItem.addEventListener('click', (e) => this.toggleMapLayer(layerName))
     this.refs.buttons.appendChild(layerItem)
