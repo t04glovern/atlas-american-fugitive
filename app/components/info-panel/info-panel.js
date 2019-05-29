@@ -20,20 +20,23 @@ export class InfoPanel extends Component {
   }
 
   /** Show info when a map item is selected */
-  async showInfo (name, id, type) {
+  async showInfo (name, type, summary) {
     // Display location title
     this.refs.title.innerHTML = `<h1>${name}</h1>`
 
-    //await this.getLocationDetailHtml(id, type)
+    // Download and display information, based on location type
+    this.refs.content.innerHTML = (type === 'Stash')
+      ? await this.getLocationDetailHtml(type, summary)
+      : `<div></div>`
   }
 
   /** Create location detail HTML string */
-  async getLocationDetailHtml (id, type) {
+  getLocationDetailHtml (type, summary) {
     // Get location metadata
-    const locationInfo = await this.api.getLocationSummary(id)
+    //const locationInfo = await this.api.getLocationSummary(id)
 
     // Format summary template
-    const summaryHTML = this.getInfoSummaryHtml(locationInfo)
+    const summaryHTML = this.getInfoSummaryHtml(summary)
 
     // Return filled HTML template
     return `
@@ -42,10 +45,8 @@ export class InfoPanel extends Component {
   }
 
   /** Format location summary HTML template */
-  getInfoSummaryHtml (info) {
+  getInfoSummaryHtml (summary) {
     return `
-      <h3>Summary</h3>
-      <div>${info.summary}</div>
-      <div><a href="${info.url}" target="_blank" rel="noopener">Read More...</a></div>`
+      <div>${summary}</div>`
   }
 }

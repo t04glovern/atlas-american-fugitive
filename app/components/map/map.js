@@ -58,8 +58,8 @@ export class Map extends Component {
     layer.bindPopup(feature.properties.name, { closeButton: false })
     layer.on({ click: (e) => {
       this.setHighlightedRegion(null) // Deselect highlighed region
-      const { name, id, type } = feature.properties
-      this.triggerEvent('locationSelected', { name, id, type })
+      const { name, type, summary } = feature.properties
+      this.triggerEvent('locationSelected', { name, type, summary })
     }})
   }
 

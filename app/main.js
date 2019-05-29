@@ -20,10 +20,10 @@ class ViewController {
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
       this.api = new ApiService('http://localhost:5000/')
     } else {
-      this.api = new ApiService('https://api.americanfugitivemap.com/')
+      this.api = new ApiService('https://americanfugitive.map.devopstar.com/')
     }
 
-    this.locationPointTypes = ['bank', 'clothing', 'donut', 'gas', 'store', 'pharmacy', 'police']
+    this.locationPointTypes = ['bank', 'clothing', 'donut', 'gas', 'stash', 'store', 'pharmacy', 'police']
     this.initializeComponents()
     this.loadMapData()
   }
@@ -39,8 +39,8 @@ class ViewController {
     this.mapComponent = new Map('map-placeholder', {
       events: { locationSelected: event => {
         // Show data in infoComponent on "locationSelected" event
-        const { name, id, type } = event.detail
-        this.infoComponent.showInfo(name, id, type)
+        const { name, type, summary } = event.detail
+        this.infoComponent.showInfo(name, type, summary)
       }}
     })
 
@@ -83,8 +83,8 @@ class ViewController {
       this.mapComponent.addLocationGeojson(locationType, geojson, this.getIconUrl(locationType))
     }
 
-    // Show police layer
-    this.layerPanel.toggleMapLayer('police')
+    // Show stash layer
+    this.layerPanel.toggleMapLayer('stash')
   }
 
   /** Format icon url for layer type  */

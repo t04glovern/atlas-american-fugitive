@@ -1,0 +1,551 @@
+[
+    {
+        "type": "Point",
+        "coordinates": [1066, 2055.5],
+        "properties": {
+            "name": "Stash 1",
+            "type": "Stash",
+            "summary": "Code: 1978"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1014.5, 2913.5],
+        "properties": {
+            "name": "Stash 2",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1397.25, 2762.5],
+        "properties": {
+            "name": "Stash 3",
+            "type": "Stash",
+            "summary": "Code: 1213"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1301, 2140.5],
+        "properties": {
+            "name": "Stash 4",
+            "type": "Stash",
+            "summary": "Code: 1976"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3027.5, 2639.5],
+        "properties": {
+            "name": "Stash 5",
+            "type": "Stash",
+            "summary": "Code: 0002"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2913, 2740.5],
+        "properties": {
+            "name": "Stash 6",
+            "type": "Stash",
+            "summary": "Code: 1981"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2142, 2266],
+        "properties": {
+            "name": "Stash 7",
+            "type": "Stash",
+            "summary": "Code: 5495"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1133, 1751],
+        "properties": {
+            "name": "Stash 8",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1118.5, 2166],
+        "properties": {
+            "name": "Stash 9",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1321.5, 1879],
+        "properties": {
+            "name": "Stash 10",
+            "type": "Stash",
+            "summary": "Code: 5439"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1271, 1874.5],
+        "properties": {
+            "name": "Stash 11",
+            "type": "Stash",
+            "summary": "Code: 5555"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1254.5, 1979],
+        "properties": {
+            "name": "Stash 12",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [806.5, 1860.75],
+        "properties": {
+            "name": "Stash 13",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [886.5, 1959],
+        "properties": {
+            "name": "Stash 14",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1330, 2044.5],
+        "properties": {
+            "name": "Stash 15",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1551, 2806.5],
+        "properties": {
+            "name": "Stash 16",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1610.5, 2779.5],
+        "properties": {
+            "name": "Stash 17",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1803.5, 3075],
+        "properties": {
+            "name": "Stash 18",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1758.5, 2563],
+        "properties": {
+            "name": "Stash 19",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1491.5, 2825],
+        "properties": {
+            "name": "Stash 20",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1169.5, 2853.5],
+        "properties": {
+            "name": "Stash 21",
+            "type": "Stash",
+            "summary": "Code: 3990"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1164, 2563],
+        "properties": {
+            "name": "Stash 22",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1213, 2859],
+        "properties": {
+            "name": "Stash 23",
+            "type": "Stash",
+            "summary": "Code: 1953"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1771, 1869],
+        "properties": {
+            "name": "Stash 24",
+            "type": "Stash",
+            "summary": "Code: 8462"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1290.5, 2503],
+        "properties": {
+            "name": "Stash 25",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2493.5, 1654.5],
+        "properties": {
+            "name": "Stash 26",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2151, 1661.5],
+        "properties": {
+            "name": "Stash 27",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3174, 1441.5],
+        "properties": {
+            "name": "Stash 28",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [946, 2222.5],
+        "properties": {
+            "name": "Stash 29",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1270, 2797],
+        "properties": {
+            "name": "Stash 30",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3358, 1163],
+        "properties": {
+            "name": "Stash 31",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3362, 1258],
+        "properties": {
+            "name": "Stash 32",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3248.5, 933.5],
+        "properties": {
+            "name": "Stash 33",
+            "type": "Stash",
+            "summary": "Code: 2345"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1309.5, 1440.5],
+        "properties": {
+            "name": "Stash 34",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2319, 2814.5],
+        "properties": {
+            "name": "Stash 35",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2259.5, 2517.5],
+        "properties": {
+            "name": "Stash 36",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2120.5, 1444.5],
+        "properties": {
+            "name": "Stash 37",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1765, 1399.5],
+        "properties": {
+            "name": "Stash 38",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1435, 1142.5],
+        "properties": {
+            "name": "Stash 39",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1661.5, 1179],
+        "properties": {
+            "name": "Stash 40",
+            "type": "Stash",
+            "summary": "Code: 3434"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2957, 1803.5],
+        "properties": {
+            "name": "Stash 41",
+            "type": "Stash",
+            "summary": "Code: 1981"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2913.5, 1774],
+        "properties": {
+            "name": "Stash 42",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1702, 1206],
+        "properties": {
+            "name": "Stash 43",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2342, 1181.5],
+        "properties": {
+            "name": "Stash 44",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3130, 1563],
+        "properties": {
+            "name": "Stash 45",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3304, 1605],
+        "properties": {
+            "name": "Stash 46",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3502, 1884.5],
+        "properties": {
+            "name": "Stash 47",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3591, 1731],
+        "properties": {
+            "name": "Stash 48",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3372.5, 967],
+        "properties": {
+            "name": "Stash 49",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3149.5, 1643],
+        "properties": {
+            "name": "Stash 50",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3173.25, 1624],
+        "properties": {
+            "name": "Stash 51",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2732, 1651],
+        "properties": {
+            "name": "Stash 52",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2486, 1822],
+        "properties": {
+            "name": "Stash 53",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2123, 1142],
+        "properties": {
+            "name": "Stash 54",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [3175, 1343],
+        "properties": {
+            "name": "Stash 55",
+            "type": "Stash",
+            "summary": "Toolbox"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [2676, 1451],
+        "properties": {
+            "name": "Stash 56",
+            "type": "Stash",
+            "summary": "Shovel Required"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1343, 2850],
+        "properties": {
+            "name": "Stash 57",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1416, 2171],
+        "properties": {
+            "name": "Stash 58",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1575, 2114],
+        "properties": {
+            "name": "Stash 59",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [920, 2483],
+        "properties": {
+            "name": "Stash 60",
+            "type": "Stash",
+            "summary": "Store Robbery"
+        }
+    },
+    {
+        "type": "Point",
+        "coordinates": [1639, 1549],
+        "properties": {
+            "name": "Stash 61",
+            "type": "Stash",
+            "summary": "Code: 8175"
+        }
+    }
+]
